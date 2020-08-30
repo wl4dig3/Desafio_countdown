@@ -2,16 +2,16 @@
   <div id="app">
     <h2>Countdown</h2>
     <!-- se insertan span por cada contador a mostrar -->
-    <span>{{contadorSeg }} seg</span>
-    <span>{{contadorSeg2 }} seg</span>
-    <span>{{contadorSeg3 }} seg</span>
-    <span>{{contadorSeg4 }} seg</span>
+    <span>{{contadorSeg }} s</span>
+    <span>{{contadorSeg2 }} s</span>
+    <span>{{contadorSeg3 }} s</span>
+    <span>{{contadorSeg4 }} s</span>
     <!-- se sgrupan en una div los botones  -->
     <div class="botones">
-      <button @click="iniciar1(60)">60 Segs</button>
-      <button @click="iniciar2(30)">30 Segs</button>
-      <button @click="iniciar3(10)">10 Segs</button>
-      <button @click="iniciar4(5)">5 Segs</button>
+      <button @click="iniciar1(60)">« </button>
+      <button @click="iniciar2(30)">« </button>
+      <button @click="iniciar3(10)">«</button>
+      <button @click="iniciar4(5)"> « </button>
     </div>
   </div>
 </template>
@@ -89,13 +89,16 @@ export default {
   }
   button {
     margin-top: 0.6rem;
-    margin-right: 0.1rem;
+    margin-right: 0.9rem;
     padding: 0.4rem 0.9rem;
     border-radius: 0.3rem;
     font-weight: 700;
   }
   span {
     margin-right: 1.7rem;
+    // padding: .2rem;
+    color: aqua;
+    font-weight: 600;
   }
 }
 </style>
